@@ -16,8 +16,8 @@ form{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 40px;
-    margin: 30px;
+    padding: 10px;
+    margin: 10px;
     border: 1px solid black;
 }
 form>input{
@@ -25,4 +25,20 @@ form>input{
 }
 .go{
     background-color: yellow;
+}
+#signUp{
+    display: flex;
+}
+#signUp>div{
+    display: flex;
+    margin: auto;
+    gap: 10px;
+}
+#signUp>div>input{
+    padding: 10px;
+    width: 100%;
+}
+
+.ads{
+    display: flex;
 }
