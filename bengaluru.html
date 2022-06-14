@@ -162,78 +162,99 @@
 
         }
 
-
+        /* second section */
         .second-section {
             border: 1px solid red;
             height: 400px;
             width: 100%;
             display: flex;
             flex-direction: row;
+            align-items: center;
+            margin: 30px auto;
+            justify-content: space-between;
+
+
         }
 
-        /* second section h4 in side div */
-        .group-snippet {
-            border: 1px solid teal;
+
+
+        .container-one {
+            border: 1px solid transparent;
+            width: 400px;
+            height: 320px;
         }
 
-        .second-sec-div {
-            border: 1px solid teal;
+        .card {
+            /* border: 1px solid red; */
             display: flex;
-            width: 450px;
-            height: 500px;
+            padding: 10px;
+            width: 380px;
+            flex-direction: row;
         }
 
-        .second-sec-first-ul {
-            border: 1px solid red;
-            width: 500px;
-            height: 350px;
+        .container-two {
+            border: 1px solid transparent;
+            width: 400px;
+            height: 320px;
+            padding: 0px 8px;
+        }
+
+        .container-two>h4 {
+            /* border: 1px solid red; */
+            height: 28px;
+            padding: 5px;
+            position: relative;
+        }
+
+        .container-two>h4::before {
+            position: absolute;
+            content: "";
+            background: #68A923;
+            width: 8px;
+            height: 8px;
+            left: -8px;
+            top: 10px;
+
+
+        }
+
+        .title-1 {
+            /* border: 1px solid red; */
+            text-align: start;
+            padding-left: 12px;
+            height: 90px;
+
+        }
+
+        .container-three {
+            border: 1px solid transparent;
+            width: 400px;
+            height: 300px;
             display: flex;
             flex-direction: column;
+        }
+
+        .card-2 {
+            /* border: 1px solid red; */
+            display: flex;
+            width: 380px;
+            height: 120px;
+            flex-direction: row;
             justify-content: space-between;
-        }
-
-        /* third section  */
-
-        .third-section {
-            border: 1px solid black;
-            display: grid;
-            width: 100%;
-            height: 600px;
-            grid-template-columns: 450px 250px 250px;
-            grid-template-rows: 280px;
-            justify-content: space-between;
-            gap: 10px;
+            align-items: center;
 
         }
 
-        .crime {
-            border: 1px solid green;
-            width: 100%;
-            height: 50px;
+        .card-2>div>img {
+            /* border: 1px solid red; */
+            width: 120px;
         }
 
-        .img {
-            border: 2px solid pink;
-            height: 200px;
-            width: 100%;
-        }
-
-        .first-img {
-            border: 2px solid black;
+        .card-2>div>h4 {
+            /* border: 1px solid red; */
+            height: 65px;
             width: 250px;
-        }
-
-        /* politice- part */
-        .politice-container {
-            border: 1px solid red;
-            display: flex;
-            flex-direction: row;
-        }
-
-        .card-two {
-            border: 1px solid red;
-            display: flex;
-            flex-direction: row;
+            margin-top: -5px;
         }
     </style>
 </head>
@@ -288,55 +309,64 @@
         </div>
 
         <div class="second-section">
-            <div class="first-div">
-                <div class="card1">
-                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/13/file7lej3koa70x1tlq3htn-1117633-1655061372.jpg?itok=dcBkmSMZ"
-                        alt="Error">
-                    <h4>Legislative Council polls for 4 constituencies today
-                    </h4>
-                    <span>13th Jun 2022</span>
+            <div class="container-one">
+                <div class="card">
+                    <div>
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/14/pm-kisan-website-screen-grab-1118099-1655210345.jpg?itok=96cVJHYj"
+                            alt="Error">
+                    </div>
+                    <div class="title-1">
+                        <h4>PM-Kisan website loophole risked 11 crore Aadhaar IDs...
+                        </h4>
+                        <p>2 hrs ago</p>
+                    </div>
                 </div>
-                <div class="second-sec-div">
-                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/13/file7lej3koa70x1tlq3htn-1117633-1655061372.jpg?itok=dcBkmSMZ"
-                        alt="Error">
-                    <h4>Legislative Council polls for 4 constituencies today
-                    </h4>
-                    <span>13th Jun 2022</span>
-                </div>
-            </div>
-            <div class="second-div">
-                <div class="group-snippet">
-                    <h4>Bengaluru sees 3-fold rise in Covid cases</h4>
-                </div>
-                <div class="group-snippet">
-                    <h4>Rampura lake revival hopes may sink over work delays</h4>
-                </div>
-                <div class="group-snippet">
-                    <h4>Amid row, Idgah digging arouses locals' suspicion</h4>
-                </div>
-                <div class="group-snippet">
-                    <h4>As cases surge, state govt makes masks a must</h4>
-                </div>
-                <div class="group-snippet">
-                    <h4>Quadruple railway line till Attibele first: Activists</h4>
+                <div class="card">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/06/14/karnataka-high-court-dh-1118107-1655209504.jpg?itok=pMqxZdkc"
+                            alt="Error">
+                    </div>
+                    <div class="title-1">
+                        <h4>Love is blind & stronger than parents' love: K'taka...
+                        </h4>
+                        <p>2 hrs ago</p>
+                    </div>
                 </div>
             </div>
-            <div class="third-div">
-
-                <div>
-                    <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/11/file7gqgno9v1jb6ykdylu1-1116249-1654627801-1-1116249-1654654596-1-1116853-1654962507.jpg?itok=pUaX6c8Z"
-                        alt="Error">
-                    <h4>Chamarajpet Idgah: BBMP asked to withdraw claim</h4>
+            <div class="container-two">
+                <h4>Academic activities in Jel (J&K)-run schools ceased</h4>
+                <h4>BJP's stance on history gets thumbs down from Nitish</h4>
+                <h4>ED questions Rahul for 2nd consecutive day in PMLA case</h4>
+                <h4>India would become $5-trillion economy by 2026-27: CEA</h4>
+                <h4>Bengaluru is world's top 5th hub for tech investments</h4>
+            </div>
+            <div class="container-three">
+                <div class="card-2">
+                    <div>
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/14/jp-nadda-pti-1118108-1655209718.jpg?itok=EENgnhit"
+                            alt="Error">
+                    </div>
+                    <div>
+                        <h4>BJP hails PM's promise to recruit 10L people...</h4>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/09/metro-dh-1116649-1654764678.jpg?itok=C3FdFCsH"
-                        alt="Error">
-                    <h4>Bengaluru Metro allows foldable bicycles on trains</h4>
+                <div class="card-2">
+                    <div>
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/14/036503-01-021-1118038-1655195951.jpg?itok=Ysaw151h"
+                            alt="Error">
+                    </div>
+                    <div>
+                        <h4>Mettle of judiciary tested: Jurists to SC on UP...</h4>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/09/fuyt6r-vsaa5d5r-1116621-1654752015.jpg?itok=NFKGA1Nz"
-                        alt="Error">
-                    <h4>Textbook row: Cong leaders protest at Vidhana Soudha...</h4>
+                <div class="card-2">
+                    <div>
+                        <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/14/clipboard-2-1118074-1655205519.jpg?itok=NPs0M3mE"
+                            alt="Error">
+                    </div>
+                    <div>
+                        <h4>Group of women beat up pizza chain employee in...</h4>
+                    </div>
                 </div>
             </div>
         </div>
