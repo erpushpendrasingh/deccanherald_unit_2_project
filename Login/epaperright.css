@@ -1,0 +1,28 @@
+
+#right{
+    width: 50%;
+    height: 1000px;
+    border: 1px solid black;
+    background-color: gray;
+
+
+}
+#right>img{
+    width: 80%;
+    margin-top: 30px;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    margin: 30px;
+    border: 1px solid black;
+}
+form>input{
+    padding: 10px;
+}
+.go{
+    background-color: yellow;
+}
