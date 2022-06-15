@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet"> -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Source+Serif+Pro&display=swap"
         rel="stylesheet">
     <title>Document</title>
 
@@ -16,6 +19,8 @@
             padding: 0px;
             margin: 0px;
             font-family: 'Source Sans Pro', sans-serif;
+            /* font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Source Serif Pro', serif; */
         }
 
         .main-container {
@@ -164,7 +169,7 @@
 
         /* second section */
         .second-section {
-            border: 1px solid red;
+            /* border: 1px solid red; */
             height: 400px;
             width: 100%;
             display: flex;
@@ -175,8 +180,6 @@
 
 
         }
-
-
 
         .container-one {
             border: 1px solid transparent;
@@ -214,8 +217,6 @@
             height: 8px;
             left: -8px;
             top: 10px;
-
-
         }
 
         .title-1 {
@@ -223,7 +224,6 @@
             text-align: start;
             padding-left: 12px;
             height: 90px;
-
         }
 
         .container-three {
@@ -242,7 +242,6 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-
         }
 
         .card-2>div>img {
@@ -255,6 +254,222 @@
             height: 65px;
             width: 250px;
             margin-top: -5px;
+        }
+
+        /* crime section (3) */
+        a {
+            text-decoration: none;
+        }
+
+        .crime-container {
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+        }
+
+        .crime-title-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            /* margin: auto; */
+        }
+
+        .tag {
+            width: 100px;
+            position: relative;
+            /* border: 1px solid red; */
+            padding: 8px;
+        }
+
+        .tag::before {
+            content: "";
+            position: absolute;
+            background: green;
+            width: 32px;
+            left: 25px;
+            margin-bottom: 10px;
+            height: 20%;
+            top: 0%;
+            transform: translate(-50%, -50%);
+        }
+
+        .crime-title-div>a {
+            color: green;
+        }
+
+        .contain-div {
+            /* border: 1px solid red; */
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 285px 285px 285px 410px;
+            grid-template-rows: 300px 300px;
+            grid-row-gap: 20px;
+            grid-column-gap: 30px;
+            /* padding: 5px; */
+        }
+
+        .one {
+            /* border: 1px solid red; */
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: flex;
+            /* text-align: center; */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            font-weight: 700;
+            /* border: 1px solid red; */
+            font-size: 34px;
+            margin: 53px auto;
+            color: white;
+            width: 350px;
+            padding: 0px 50px;
+        }
+
+        .one>div {
+            /* border: 1px solid red; */
+            background-color: #68A923;
+            height: 270px;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+
+        .two {
+            /* border: 1px solid red; */
+            grid-column-start: 4;
+            grid-column-end: 5;
+            background-color: #68A923;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 32px;
+            color: white;
+            /* padding-top: -20px; */
+            height: 270px;
+            margin-top: 12px;
+            font-family: 'Source Serif Pro', serif;
+            font-style: normal;
+
+
+        }
+
+        .two>h4 {
+            /* border: 1px solid red; */
+            /* align-items: center; */
+            /* justify-content: center; */
+            margin: 60px auto;
+            width: 280px;
+            /* font-family: 'Source Sans Pro', sans-serif; */
+
+        }
+
+        .title+p {
+            /* border: 1px solid red; */
+            padding-left: 50px;
+            margin-top: -50px;
+
+        }
+
+        .three>img,
+        .four>img,
+        .five>img {
+            /* border: 1px solid red; */
+            width: 100%;
+        }
+
+        .three {
+            /* border: 1px solid red; */
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: #F6F6F6;
+        }
+
+        .four {
+            /* border: 1px solid red; */
+            grid-column-start: 2;
+            grid-column-end: 3;
+            background-color: #F6F6F6;
+        }
+
+        .five {
+            /* border: 1px solid red; */
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: #F6F6F6;
+        }
+
+        /* politice section */
+        .politics-container {
+            /* border: 2px solid black; */
+            width: 100%;
+            height: 400px;
+            display: grid;
+            grid-template-columns: 500px 350px 500px;
+            grid-template-rows: 350px;
+            gap: 40px;
+            /* row-gap: 10px; */
+
+
+        }
+
+        .box-1 {
+            /* border: 1px solid red; */
+            height: 400;
+            background-color: #68A923;
+        }
+
+        .box-1>img {
+            height: 350px;
+            /* width: 50px; */
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .box-2 {
+            /* border: 1px solid red; */
+            margin: auto;
+            background-color: #68A923;
+            height: 350px;
+
+        }
+
+        .box-2>h4 {
+            /* border: 1px solid red; */
+            width: 350px;
+            font-size: 35px;
+            padding: 50px;
+            color: white;
+        }
+
+        .box-3 {
+            /* border: 1px solid red; */
+            display: flex;
+            flex-direction: column;
+            width: 420px;
+            background-color: #F6F6F6;
+
+        }
+
+        .politics-cards {
+            /* border: 1px solid red; */
+            width: 340px;
+            display: grid;
+            grid-template-columns: 110px 250px;
+            grid-template-rows: 60px;
+            gap: 10px;
+            margin: auto auto auto 18px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 10px;
+
+
         }
     </style>
 </head>
@@ -367,6 +582,166 @@
                     <div>
                         <h4>Group of women beat up pizza chain employee in...</h4>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="crime-container">
+            <div class="crime-title-div">
+                <h3 class="tag">CRIME</h3>
+                <a href="#">VIEW ALL</a>
+            </div>
+            <div class="contain-div">
+                <div class="one">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/06/14/crime-scene-istock-2-1090795-1647118549-1095083-1648366479-1095956-1648598488-1109101-1652481534-1114926-1654249187-1115843-1654527945-1117946.jpg?itok=dZ9KgBdv"
+                        alt="Error">
+                    <div>
+                        <h4 class="title">Man kills lover with pillow, asks wife to check on her
+                        </h4>
+                        <p>12:43 pm</p>
+                    </div>
+                </div>
+                <div class="two">
+                    <h4>Gang helping Bangladeshi migrants to get ID proofs held</h4>
+                </div>
+                <div class="three">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/14/arrest-istock-1-1024931-1630257269-1117726-1655120147-1117940-1655154979.jpg?itok=3wUUS-mF"
+                        alt="Error">
+                    <h4>Popcorn vendor arrested for 'spitting into cooking oil'...</h4>
+                    <p>14th jun 2022</p>
+                </div>
+                <div class="four">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/14/28326015018599058075319964186223787058104347n1-1117676-1655173762.jpg?itok=vDaWBkxD"
+                        alt="Error">
+                    <h4>Actor Siddhanth Kapoor arrested in drug bust, gets bail...</h4>
+                    <p>14th jun 2022</p>
+                </div>
+                <div class="five">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/12/download-2-897122-1601808036-1117406-1654987107.jpg?itok=VFOTlTko"
+                        alt="Error">
+                    <h4>Student arrested for conning laptop buyers online</h4>
+                    <p>12th jun 2022</p>
+                </div>
+            </div>
+        </div>
+        <div class="crime-title-div">
+            <h3 class="tag">POLITICS</h3>
+            <a href="#">VIEW ALL</a>
+        </div>
+        <div class="politics-container">
+            <div class="box-1">
+                <!-- <h1>box-one</box-1> -->
+                </h1>
+                <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/06/01/bbmp-dh-1114235-1654029697.jpg?itok=IDnCdQdv"
+                    alt="Error">
+
+            </div>
+            <div class="box-2">
+                <h4>BBMPseeks two more days to submit delimitation report</h4>
+                <p>1st jun 2022</p>
+            </div>
+            <div class="box-3">
+                <!-- <h1>box-two</h1> -->
+                <div class="politics-cards">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/05/31/bbmp-dh-1113922-1653941129.jpg?itok=fj1nxhcU"
+                        alt="Error">
+                    <h4> K'taka cabinet nod for amendment to BBMP Act on...</h4>
+                </div>
+                <div class="politics-cards">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/05/20/bng10-aap-bkj-03-1-1111047-1653061723.jpg?itok=9pvU83Rv"
+                        alt="Error">
+                    <h4> AAP protests in Bengaluru over closure of govt schools...</h4>
+                </div>
+                <div class="politics-cards">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/05/19/bengaluru-rain-bommai-pti-1110678-1652955642.jpg?itok=kzpF5yKV"
+                        alt="Error">
+                    <h4>Protect ‘Brand Bengaluru’, SMK tells Bommai amid rains... </h4>
+                </div>
+
+            </div>
+        </div>
+        <!-- INFRASTRUCTURE -->
+        <div class="crime-container">
+
+            <div class="crime-title-div">
+                <h3 class="tag">INFRASTRUCTURE</h3>
+                <a href="#">VIEW ALL</a>
+            </div>
+            <div class="contain-div">
+                <div class="one">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/06/13/file7lel4sxs5821bsnhthtn-1117654-1655078480.jpg?itok=0bzldRIQ"
+                        alt="Error">
+                    <div>
+                        <h4 class="title">RR Nagar to get flyover, two underpasses and SWM plant</h4>
+                        <p>12:43 pm</p>
+                    </div>
+                </div>
+                <div class="two">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/largevertical/public/articleimages/2022/06/10/protests-istock-1067592-1641222016-1116855-1654813430.jpg?itok=X3UV-I36"
+                        alt="">
+
+                    <h4> helping Bangladeshi migrants to get ID proofs held</h4>
+                </div>
+                <div class="three">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/12/bng31-airport-07-1-1117407-1654985206.jpg?itok=zT50L8mL"
+                        alt="Error">
+                    <h4>First U-girder cast for airport metro line
+                    </h4>
+                    <p>14th jun 2022</p>
+                </div>
+                <div class="four">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/12/news29metro-work-silkboard-junction-2-1-1117408-1655014443.jpg?itok=ByoWChVT"
+                        alt="Error">
+                    <h4>Need quadruple rail line before Hosur Metro: Activists...</h4>
+                    <p>14th jun 2022</p>
+                </div>
+                <div class="five">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/11/file7kk3suf4wqsv2xpuinr-1117139-1654889161-1-1117139-1654934366.jpg?itok=iUz-JAuk"
+                        alt="Error">
+                    <h4>Back to office: Bengaluru sees rising house rents...
+                    </h4>
+                    <p>12th jun 2022</p>
+                </div>
+            </div>
+        </div>
+        <!-- LIFE IN THE CITY -->
+        <div class="crime-container">
+
+            <div class="crime-title-div">
+                <h3 class="tag">LIFE IN THE CITY</h3>
+                <a href="#">VIEW ALL</a>
+            </div>
+            <div class="contain-div">
+                <div class="one">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/06/14/file7iiqzqsaqbmxsn6ha5l-1117919-1655144161-1-1117919-1655173992.jpg?itok=DKmdd9Nh"
+                        alt="Error">
+                    <div>
+                        <h4 class="title">Bengaluru now 'abuse capital for elders'
+
+                        </h4>
+                        <p>12:43 pm</p>
+                    </div>
+                </div>
+                <!-- changing background color to white -->
+                <div class="two">
+                    <h4>BBMP seeks additional funds to clear garbage blackspots</h4>
+                </div>
+                <div class="three">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/14/crime-scene-istock-2-1090795-1647118549-1095083-1648366479-1095956-1648598488-1109101-1652481534-1114926-1654249187-1115843-1654527945-1117946.jpg?itok=UGpJGsH4"
+                        alt="Error">
+                    <h4>Man kills lover with pillow, asks wife to check...</h4>
+                    <p>14th jun 2022</p>
+                </div>
+                <div class="four">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/14/bng21-bmtc-skd-12jpg1-1112508-1653510708-1117945-1655155562.jpg?itok=ox9jBTda"
+                        alt="Error">
+                    <h4>BMTC extends validity of student bus pass till June...</h4>
+                    <p>14th jun 2022</p>
+                </div>
+                <div class="five">
+                    <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/14/file7lf4jdzhrnbocm6h7x8-1117943-1655155176.jpg?itok=uBXIIz8K"
+                        alt="Error">
+                    <h4>BMTC extends validity of student bus pass till June...</h4>
+                    <p>12th jun 2022</p>
                 </div>
             </div>
         </div>
