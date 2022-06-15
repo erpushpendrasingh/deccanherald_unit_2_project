@@ -15,7 +15,7 @@
     margin: 0px;
     padding: 0px;
     color: white;
-    height: 800px;
+    height: 757px;
     position: sticky;
     top :0px
 }
@@ -108,3 +108,68 @@
     color: #eeb629;
 }
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    width: 100%;
+    text-align: center;
+    margin:40px;
+}
+#contactline{
+        background-color: #0087a8;
+        width: 40px;
+        height: 10px;
+        margin: auto;
+        margin-top: 8px;
+}
+#contact+p{
+    color:black;
+}
+#address{
+    color: #333333;
+    text-align: center;
+    line-height: 30px;
+    font-size: 18px;
+}
+#contact>h1{
+    font-size: 20px;
+}
+.foot{
+    font-weight: bold;
+} 
+.d{
+    margin:20px
+}
+@media all and (min-width:300px) and (max-width:750px){
+    #container{
+        display: block;
+    }
+    #right>#box>img{
+        width: 80%;
+    }
+    #left{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    #signUp>#formcolumn{
+        display: contents;
+       }
+       #signUp>#formcolumn1{
+        display: contents;
+       }
+       #signUp>#formcolumn2{
+        display: contents;
+       }
+       #signUp>#formcolumn1>select{
+        padding: 10px;
+        width: 100%;
+       }
+       #lower{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+       }
+}

@@ -1,44 +1,252 @@
 
+
 #right{
     width: 50%;
-    height: 1000px;
-    border: 1px solid black;
-    background-color: gray;
-
-
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+}
+#box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.5);
+    height: auto;
 }
 #right>img{
-    width: 80%;
+    width: 60%;
     margin-top: 30px;
     
+}
+#formcontainer{
+    box-shadow: 0 3px 22px #00000026;
+    width: 100%;
+    padding: 15px;
+    margin: 0px 30px 30px 30px ;
+}
+#right>#box>#formcontainer>#btn{
+    display: flex;
+    justify-content: left;
+    width: 94%;
+    gap: 15px;
+    padding: 10px;
+}
+.anchor{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.line{
+    width: 30px;
+    height: 8px;
+    background-color: gray;
 }
 form{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     padding: 10px;
     margin: 10px;
-    border: 1px solid black;
+    margin-top: 15px;
 }
 form>input{
     padding: 10px;
+    margin-top: 20px;
 }
 .go{
-    background-color: yellow;
+    background-color:#ffc;
+    border: 1px solid #ffff43;
+    text-decoration: none;
+    margin-left: 10px;
 }
-#signUp{
+
+#divform{
+    box-shadow: 0 3px 22px #00000026;
+}
+#about{
+    color: black;
+    margin: 50px;
+    font-size: 12px;
+    font-weight: bold;
     display: flex;
+    flex-direction: column;
+    
 }
+#about+img{
+    width: 100%;
+}
+
+#about+img+p{
+    width: 100%;
+    line-height: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    font-size: 18px;
+    padding: 40px;
+    background-color: #edf3f7;
+}
+
+#aboutline{
+    background-color: #0087a8;
+    width: 40px;
+    height: 10px;
+    margin: auto;
+}
+.price{
+    text-decoration: line-through;
+}
+
 #signUp>div{
     display: flex;
     margin: auto;
     gap: 10px;
+    width: 100%;
+
 }
 #signUp>div>input{
     padding: 10px;
     width: 100%;
-}
 
+}
+#signUp>div>select{
+    width: 103%;
+    
+}
+#loginbutton{
+    background-color: #0087a8;
+    border: none ;  
+    border-radius: 20px;    
+    color: white;
+    font-size: 18px;
+}
 .ads{
     display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    width: 280px;
+    height: 210px;
+    padding: 20px;
+    box-shadow: 0 3px 22px #00000026;
+    border-radius: 10px;
+
+
+}
+.ads:hover{
+    cursor: pointer;
+}
+#subscribe{
+ 
+        background-color: #0087a8;
+        border: none ;  
+        border-radius: 20px;    
+        color: white;
+        font-size: 18px;
+    
+}
+#applypromo{
+    border:1px solid #0087a8;
+    border-radius: 0px 5px 5px 0px ;
+    background-color: #acacac;
+    color: white;
+}
+.conditions{
+    color: #0087a8;
+    font-weight: bold;
+}
+
+.h3{
+    text-align:center;
+    color:#0087a8;
+    margin:5px;
+}
+.p{
+    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+}
+
+#holder2 {
+    display: flex;
+    flex-direction: column;
+}
+#leftline,#rightline{
+    width: 60%;
+    border-top: 1px solid black;
+    opacity: 0.9;
+    margin: 10px;
+}
+
+.Privacy{
+    color: #f7b825;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#address>a{
+    color:#0087a8
+}
+#address>a:link{
+    color: #0087a8;
+    text-decoration: none;
+}
+#address>a:visited{
+    text-decoration: none;
+    color: #0087a8;
+}
+@media all and (min-width:670px) and (max-width:1100px) {
+    #adsparent{
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    #right>#box>img{
+        width: 90%;
+        margin-top: 30px;
+    }
+    #right{
+        width: 100%;
+    }
+    .formcolumn{
+        display: contents;
+    }
+}
+
+@media all and (min-width:320px) and (max-width:671px){
+    #right{
+        width: 100%;
+    }
+    #left{
+        width: 100%;
+        width: auto;
+        position: relative;
+    }
+    #adsparent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ads{
+        width: 100%;
+        height: 180px;
+    }
+   #signUp>#formcolumn{
+    display: contents;
+   }
+   #signUp>#formcolumn1{
+    display: contents;
+   }
+   #signUp>#formcolumn2{
+    display: contents;
+   }
+   #signUp>#formcolumn1>select{
+    padding: 10px;
+    width: 100%;
+   }
 }
