@@ -142,6 +142,9 @@
 .d{
     margin:20px
 }
+.anchor:hover{
+    cursor: pointer;
+}
 @media all and (min-width:300px) and (max-width:750px){
     #container{
         display: block;
