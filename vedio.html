@@ -126,7 +126,7 @@
         .card {
             /* border: 1px solid red; */
             width: 500px;
-            height: 350px;
+            height: 360px;
             margin: auto;
             background-color: #eceaea;
 
@@ -159,16 +159,47 @@
             text-decoration: none;
         }
 
+        .title-div {
+            /* border: 1px solid black; */
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 1550px;
+            margin: 25px auto;
+        }
+
+        .title-div>a {
+            color: green;
+        }
+
+        .tag {
+            /* border: 1px solid red; */
+            width: 200px;
+            padding: 12px;
+            text-align: start;
+            position: relative;
+
+        }
+
         .tag::before {
-            /* content: ""; */
+            content: "";
+            /* border: 5px solid red; */
             position: absolute;
-            background: green;
-            width: 32px;
-            left: 25px;
-            margin-bottom: 10px;
-            height: 20%;
-            top: 0%;
+            width: 35px;
+            background: #7DBF85;
+            height: 12px;
+            top: 0px;
             transform: translate(-50%, -50%);
+            left: 32px;
+
+
+
+        }
+
+        iframe {
+            border-bottom: 5px solid #7DBF85;
         }
     </style>
 </head>
@@ -204,8 +235,12 @@
             <!-- nav-container end -->
         </div>
         <!-- latest videos tab  -->
-        <div class="head-title">
+        <!-- <div class="head-title">
             <a href="#">LATEST VIDEOS</a>
+        </div> -->
+        <div class="title-div">
+            <h3 class="tag">LATEST VIDEOS</h3>
+            <a href="#">VIEW ALL</a>
         </div>
         <!-- latest vedio card container -->
         <div class="vid-card-container">
@@ -293,9 +328,11 @@
             </div>
         </div>
         <!-- BENGALURU -->
-        <div class="head-title">
-            <a href="#">BENGALURU</a>
+        <div class="title-div">
+            <h3 class="tag">BENGALURU</h3>
+            <a href="#">VIEW ALL</a>
         </div>
+
         <div class="bengaluru-container">
             <div class="card">
                 <iframe width="500" height="250" src="https://www.youtube.com/embed/KZncKzbsmGU"
@@ -330,8 +367,9 @@
 
         <!-- KARNATAKA -->
 
-        <div class="head-title">
-            <a href="#">KARNATAKA</a>
+        <div class="title-div">
+            <h3 class="tag">KARNATAKA</h3>
+            <a href="#">VIEW ALL</a>
         </div>
         <div class="bengaluru-container">
             <div class="card">
@@ -365,8 +403,9 @@
         </div>
 
         <!-- PEOPLE -->
-        <div class="head-title">
-            <a href="#">PEOPLE</a>
+        <div class="title-div">
+            <h3 class="tag">PEOPLE</h3>
+            <a href="#">VIEW ALL</a>
         </div>
         <div class="bengaluru-container">
             <div class="card">
@@ -400,8 +439,9 @@
         </div>
 
         <!-- POPULAR -->
-        <div class="head-title">
-            <a href="#">POPULAR</a>
+        <div class="title-div">
+            <h3 class="tag">POPULAR</h3>
+            <a href="#">VIEW ALL</a>
         </div>
         <div class="bengaluru-container">
             <div class="card">
