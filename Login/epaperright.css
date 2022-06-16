@@ -217,6 +217,16 @@ form>input{
         display: contents;
     }
 }
+#message{
+    background-color: pink;
+    
+    color: red;
+    border-radius: 5px;
+}
+#wem{
+    font-size: 12px;
+}
+
 
 @media all and (min-width:320px) and (max-width:671px){
     #right{

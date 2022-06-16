@@ -1,6 +1,15 @@
 
 document.querySelector("#login").addEventListener("click", displayLogin)
-
+let arr = JSON.parse(localStorage.getItem("details")) || []
+let emailflag = false
+let mobileflag = false
+let selectflag = false 
+let nameflag = false
+let Cpasswordflag = false
+let termflag = false 
+let dailypaperflag = false
+let inputf = false
+let input1f = false
 displayLogin()
 function displayLogin() {
     let form = document.querySelector("form")
@@ -246,23 +255,102 @@ function displaySubs() {
 
 function signup() {
     let sign = document.querySelector("#divform")
-    
+    let arr = []
     let form1 = document.createElement("form")
     form1.id = "signUp"
+
+    let message = document.createElement("div")
+        message.setAttribute("id","message")
+        wem =   document.createElement("p")
+        wem.setAttribute("id","wem")
+    
+
     let div1 = document.createElement("div")
     div1.style.flex = "flex"
     div1.setAttribute("id","formcolumn")
+    
+    // flags
+    
 
     let Email = document.createElement("input")
     Email.placeholder = "Enter Your Email"
+
+
+    Email.setAttribute("id","email")
+    /// Email error logic
+    Email.addEventListener("input", function(){
+        emailcheck()
+    }) 
+
+  function emailcheck() {
+        event.preventDefault()
+        document.querySelector("#Email")
+        bag = Email.value
+       
+        for(let i=0;i<bag.length;i++){
+            if(bag[bag.length-1]==="m" && bag[bag.length-2]==="o"  && bag[bag.length-3 ]==="c"){
+              wem.innerText= ""
+              message.style.padding="0px"
+              Email.style.borderColor = "black"
+              emailflag = true
+            }else if (bag = ""){
+                wem.innerText = "Enter Correct Email"
+                Email.style.borderColor = "red"
+                message.style.padding="10px"
+                 emailflag = false
+            }
+            else{
+                wem.innerText = "Enter Correct Email"
+                Email.style.borderColor = "red"
+                message.style.padding="10px"
+                 emailflag = false
+            }
+        }
+
+    }
+       
+ 
+
+
+
     let Mobile = document.createElement("input")
+    Mobile.setAttribute("id","mobile")
     Mobile.placeholder = "Enter Your Mobile Number"
+    Mobile.addEventListener("input", function () {
+        event.preventDefault()
+        let bag = document.querySelector("#mobile").value
+        console.log(bag)
+        if(bag.length<10){
+            wem.innerText = "Enter Correct Mobile Number"
+            Mobile.style.borderColor = "red"
+            message.style.padding="10px"
+            mobileflag = false
+        }else{
+            wem.innerText= ""
+            message.style.padding="0px"
+            Mobile.style.borderColor = "black"
+            mobileflag = true
+        }
+    })
     div1.append(Email,Mobile)
 
     let div2= document.createElement("div")
   
     div2.setAttribute("id","formcolumn1")
     select = document.createElement("select")
+    select.setAttribute("id","select")
+    select.addEventListener("click",function(){
+        let bag = document.querySelector("#select").value
+        if(bag === "default"){
+            wem.innerText = "Please Select an Edition"
+            message.style.padding="10px"
+        }else{
+            wem.innerText= ""
+            message.style.padding="0px"
+            select.style.borderColor = "black"
+            selectflag = true
+        }
+    })
     let op1 = document.createElement("option")
     op1.value= "default"
     op1.innerText="Select Your Default Editon"
@@ -272,17 +360,94 @@ function signup() {
     select.append(op1,op2)
 
     let name = document.createElement("input")
+    name.setAttribute("id","name")
     name.placeholder="Enter Your name"
+    name.addEventListener("input", function () {
+        event.preventDefault()
+        let bag = document.querySelector("#name").value
+        name.style.borderColor = "##0087a8"
+        console.log(bag)
+        if(bag.length === 0 ){
+            wem.innerText = "Name field cant be blank"
+            message.style.padding="10px"
+            name.style.borderColor = "red"
+        }else{
+            wem.innerText = ""
+            message.style.padding="0px"
+            name.style.borderColor = "black"
+            nameflag=true
+        }
+    })
     div2.append(select,name)
 
     let div3 = document.createElement("div")
     div3.setAttribute("id","formcolumn2")
     let Password = document.createElement("input")
     Password.type="password"
+    
     Password.placeholder="Enter Your Password"
+    Password.setAttribute("id","password")
     let Passwordc = document.createElement("input")
+    Passwordc.setAttribute("id","passwordc")
     Passwordc.type="password"
     Passwordc.placeholder="ConfirmYour Password"
+   
+    Password.addEventListener("input", function () {
+        let bag = document.querySelector("#password").value
+        let bag1 = document.querySelector("#passwordc").value
+       if(bag === "" ){
+        wem.innerText = "Password Can,t be blank"
+        message.style.padding="10px"
+        document.querySelector("#password").style.border = "1px solid red"
+        Cpasswordflag = false
+       }
+       else if(bag.length<6){
+        wem.innerText = "Password is too short Password should be minimum 6 character"
+        message.style.padding="10px"
+        Cpasswordflag = false
+
+    }else{
+        wem.innerText = ""
+        message.style.padding="0px"
+        document.querySelector("#password").style.borderColor = "black"
+       
+         }
+    })
+    Passwordc.addEventListener("input", function (){
+        let bag = document.querySelector("#password").value
+        let bag1 = document.querySelector("#passwordc").value
+        if(bag1 === "" ){
+            wem.innerText = "Confirm Password Can,t be blank"
+            Password.style.borderColor = "red"
+            message.style.padding="10px"
+            Cpasswordflag = false
+           }
+        else if(bag1.length<6){
+            wem.innerText = "Confirm Password is too short Password should be minimum 6 character"
+            message.style.padding="10px"
+            Passwordc.style.borderColor = "red"
+            Passwordc.style.transition=".4s"
+            Cpasswordflag = false
+        }else{
+            wem.innerText = ""
+            message.style.padding="0px"
+            Cpasswordflag = false
+
+        }
+        if(bag !== bag1){
+            wem.innerText = "Password doesn't Match"
+            Password.style.borderColor = "red"
+           
+           
+            message.style.padding="10px"
+        }else{
+            wem.innerText = ""
+            message.style.padding="0px"
+            Passwordc.style.borderColor = "black"
+            Password.style.borderColor = "black"
+            Cpasswordflag = true;
+        }
+    })
     div3.append(Password,Passwordc)
 
     div4=document.createElement("div")
@@ -310,19 +475,29 @@ function signup() {
 
     let parent = document.createElement("div")
     let div6 = document.createElement("div")
+    
     let input = document.createElement("input")
     input.type="checkbox"
     input.style.margin="5px"
+    input.addEventListener("click", function () {
+      inputf = event.target.checked 
+    })
     let span = document.createElement("span")
     span.innerText = "Yes"
     span.style.margin="5px"
     let input1 = document.createElement("input")
     input1.type="checkbox"
     input1.style.margin="5px"
+  
+    input1.addEventListener("click", function () {
+      input1f =  event.target.checked
+    })
     let span1 = document.createElement("span")
     span1.innerText = "No"
     // span1.justifyContent="left"
     span1.style.margin="5px"
+
+    
     div6.append(input,span,input1,span1)
     parent.append(div6)
 
@@ -332,8 +507,13 @@ function signup() {
     let mark = document.createElement("input")
     mark.type="checkbox"
     mark.style.margin="5px"
+    mark.addEventListener("click", function () {
+        event.target.checked
+        termflag = true
+     })
     let markmessage = document.createElement("span")
     markmessage.innerHTML="By registering with us, you agree to our <span class='conditions'> Terms and Conditions </span>"
+   
     holder.append(mark,markmessage)
     div7.append(holder)
 
@@ -342,6 +522,10 @@ function signup() {
     signupbtn.type="submit"
     signupbtn.value= "COMPLETE SUBSCRIPTION"
     signupbtn.setAttribute("id","subscribe")
+    signupbtn.addEventListener("click", function () {
+        event.preventDefault()
+        details()
+    })
     
     div8.append(signupbtn)
 
@@ -372,11 +556,8 @@ function signup() {
     imgg.setAttribute("src","googlenew.png")
     div10.append(img,line3,imgg)
 
-
-
-
-
-    form1.append(div1,div2,div3,div4,div5,parent,div7,div8,div9,div10)
+    message.append(wem,)
+    form1.append(message,div1,div2,div3,div4,div5,parent,div7,div8,div9,div10)
     sign.append(form1)
 
 }
@@ -411,3 +592,82 @@ login.addEventListener("click", function () {
 
 
 
+function details(){
+
+    if(inputf === true && input1f===true){
+        dailypaperflag = false
+    }else if(inputf === false && input1f===false){
+        dailypaperflag = false
+    }else if(inputf===true){
+        dailypaperflag = true
+    }
+    let list = document.createElement("ul")
+        list.setAttribute("id","messagelist")
+    let messageholder = document.querySelector("#message")
+    messageholder.style.fontSize="12px"
+
+    let alert1 = document.createElement("li")
+    let alert2 = document.createElement("li")
+    let alert3 = document.createElement("li")
+    let alert4 = document.createElement("li")
+    let alert5 = document.createElement("li")
+    let alert6 = document.createElement("li")
+    let alert7 = document.createElement("li")
+
+
+    function formfilled(){
+    
+        if(emailflag=== true && termflag ===true && mobileflag===true
+             &&Cpasswordflag===true &&nameflag===true && selectflag === true 
+                && dailypaperflag===true ){
+                    return true
+        }else{
+            return false
+        }
+    }
+    let condition = formfilled()
+    // console.log(condition)
+    if(condition===true){
+        let obj = {
+            Email : document.querySelector("#email").value,
+            Mobile : document.querySelector("#mobile").value,
+            Select : document.querySelector("#select").value,
+            Name : document.querySelector("#name").value,
+            Password : document.querySelector("#password").value,
+        }
+        arr.push(obj)
+        let details = localStorage.setItem("details",JSON.stringify(arr))
+
+        
+        messageholder.style.padding="0px"
+        messageholder.innerHTML= ""
+       
+    }else{
+       messageholder.style.padding="10px"
+        messageholder.innerHTML=""
+        if(emailflag===false){
+            alert1.innerText = "Please Enter an Valid Email"
+            list.append(alert1)
+        }
+        if(mobileflag === false){
+            alert2.innerText = "Please Enter an Valid Contact"
+            list.append(alert2)
+        }
+        if(selectflag===false){
+            alert3.innerText = "Please Select an Edition"
+            list.append(alert3)
+        }
+        if(nameflag === false){
+            alert4.innerText = "Please Enter an Valid name"
+            list.append(alert4)
+        }
+        if(Cpasswordflag=== false){
+            alert5.innerText= "Please select right password"
+            list.append(alert5)
+        }
+        messageholder.append(list)
+    }
+   
+
+
+}
