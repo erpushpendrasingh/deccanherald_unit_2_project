@@ -10,17 +10,81 @@ let termflag = false
 let dailypaperflag = false
 let inputf = false
 let input1f = false
-let double = true
+
+
+
+
+let loginfield = false;
+let passwordfield = false;
+
 displayLogin()
 function displayLogin() {
     let form = document.querySelector("form")
+    let message= document.createElement("div")
+    message.style.fontSize= "12px"
+    let wem = document.createElement("p")
     form.innerHTML = ""
     let inputemail = document.createElement("input")
     inputemail.placeholder = "       Email"
+    inputemail.addEventListener("input", function () {
+        let bag = inputemail.value
+        for (let i = 0; i < bag.length; i++) {
+            if (bag[bag.length - 1] === "m" && bag[bag.length - 2] === "o" && bag[bag.length - 3] === "c") {
+                wem.innerText = ""
+                message.style.padding = "0px"
+                inputemail.style.borderColor = "black"
+                loginfield = true
+                message.style.backgroundColor = "white"
+                message.style.border = "1px solid white"
+            } else if (bag = "") {
+                wem.innerText = "Enter Correct Email"
+                inputemail.style.borderColor = "red"
+                message.style.padding = "10px"
+                loginfield = false
+                message.style.padding = "10px"
+                message.style.backgroundColor = "pink"
+                message.style.border = "1px solid red"
+                message.style.color = "red"
+            }
+            else {
+                wem.innerText = "Enter Correct Email"
+                  inputemail.style.borderColor = "red"
+                message.style.padding = "10px"
+                loginfield = false
+                message.style.padding = "10px"
+                message.style.backgroundColor = "pink"
+                message.style.border = "1px solid red"
+                message.style.color = "red"
+            }
+        }
+
+    })
+    
 
     let inputpassword = document.createElement("input")
     inputpassword.placeholder = "      Password"
-
+    inputpassword.type = "password"
+    inputpassword.addEventListener("input", function () {
+        let bag = inputpassword.value
+        console.log(bag.length)
+        if(bag.length<6){
+            wem.innerText = "Password length should be greater than 6 characters"
+            inputpassword.style.borderColor = "red"
+          message.style.padding = "10px"
+         passwordfield = false
+          message.style.padding = "10px"
+          message.style.backgroundColor = "pink"
+          message.style.border = "1px solid red"
+          message.style.color = "red"
+        }else {
+            wem.innerText = ""
+            message.style.padding = "0px"
+            inputemail.style.borderColor = "black"
+            passwordfield = true
+            message.style.backgroundColor = "white"
+            message.style.border = "1px solid white"
+        }
+    })
 
     let div = document.createElement("div")
     div.style.display = "flex"
@@ -59,6 +123,16 @@ function displayLogin() {
     button.setAttribute("id", "loginbutton")
     button.addEventListener("click", function () {
         event.preventDefault()
+        let details = JSON.parse(localStorage.getItem("details")) || []
+        console.log(details)
+        let email = inputemail.value
+        let pass = inputpassword.value
+       
+        details.forEach(function(elem, ind){
+            if(elem.Email=== email && elem.Password=== pass){
+                alert(" Successfully Logged in")
+            }
+        })
     })
 
 
@@ -91,8 +165,8 @@ function displayLogin() {
     div10.append(img, line3, imgg)
 
 
-
-    form.append(inputemail, inputpassword, div, div1, button, forgot, hr, div10)
+    message.append(wem)
+    form.append( message,inputemail, inputpassword, div, div1, button, forgot, hr, div10)
 }
 document.querySelector("#subs").addEventListener("click", displaySubs)
 function displaySubs() {
@@ -278,6 +352,7 @@ function signup() {
         emailcheck()
     })
 
+    
     function emailcheck() {
         event.preventDefault()
         document.querySelector("#Email")
@@ -511,6 +586,7 @@ function signup() {
     signupbtn.setAttribute("id", "subscribe")
     signupbtn.addEventListener("click", function () {
         event.preventDefault()
+      
         details()
     })
 
@@ -575,22 +651,32 @@ function loginbutton() {
 }
 
 function details() {
-    let email = document.querySelector("#email").value
-    arr.forEach(function (elem, ind) {
-        for (let i = 0; arr.length; i++) {
-            if (arr[i].Email === email) {
-                double= false
-           
-               
-            }else{
-                console.log("boom")
-                exist()
-                break;
-            }
-        }
 
-    })
-   
+  
+        let email = document.querySelector("#email").value
+       
+        arr.forEach(function (elem, ind) {
+            for (let i = 0; arr.length; i++) {
+                if (arr[i].Email === email) {
+                  
+                    exist()
+                  console.log(true)
+                  break;
+                   
+                  
+                   
+                }else{
+                    console.log("boom")
+                    
+                  break;
+                }
+            }
+    
+        })
+    
+    
+  
+
     if (inputf === true && input1f === true) {
         dailypaperflag = false
     } else if (inputf === false && input1f === false) {
@@ -613,14 +699,16 @@ function details() {
 
         if (emailflag === true && termflag === true && mobileflag === true
             && Cpasswordflag === true && nameflag === true && selectflag === true
-            && dailypaperflag === true && double === false) {
+            && dailypaperflag === true) {
             return true
         } else {
             return false
         }
     }
    
+
     let condition = formfilled()
+ 
     if (condition === true) {
         let obj = {
             Email: document.querySelector("#email").value,
@@ -630,7 +718,7 @@ function details() {
             Password: document.querySelector("#password").value,
         }
         arr.push(obj)
-        let details = localStorage.setItem("details", JSON.stringify(arr))
+       localStorage.setItem("details", JSON.stringify(arr))
         paywindow()
         messageholder.style.padding = "0px"
         messageholder.innerHTML = ""
@@ -692,6 +780,9 @@ function paywindow(){
     
         let box2 = document.createElement("div")
         box2.setAttribute("id","box2")
+        box2.addEventListener("click", function () {
+            window.location= "Pay.html"
+        })
         box2.setAttribute("class","payment")
         holder1 = document.createElement("div")
         holder1.setAttribute("class", "holder")
@@ -711,6 +802,9 @@ function paywindow(){
         let box3 = document.createElement("div")
         box3.setAttribute("id", "box3")
         box3.setAttribute("class", "payment")
+        box3.addEventListener("click", function () {
+            window.location= "Pay.html"
+        })
         holder2 = document.createElement("div")
         holder2.setAttribute("class", "holder")
         let h2 = document.createElement("h3")
@@ -728,6 +822,9 @@ function paywindow(){
         let box4 = document.createElement("div")
         box4.setAttribute("id", "box4")
         box4.setAttribute("class", "payment")
+        box4.addEventListener("click", function () {
+            window.location= "Pay.html"
+        })
         holder3 = document.createElement("div")
         holder3.setAttribute("class", "holder")
         let h3 = document.createElement("h3")
@@ -744,6 +841,9 @@ function paywindow(){
         let box5 = document.createElement("div")
         box5.setAttribute("id", "box5")
         box5.setAttribute("class", "payment")
+        box5.addEventListener("click", function () {
+            window.location= "Pay.html"
+        })
         holder4 = document.createElement("div")
         holder4.setAttribute("class", "holder")
         let h4 = document.createElement("h3")
@@ -825,3 +925,6 @@ function exist(){
     container.append(parent)
 
 }
+
+
+

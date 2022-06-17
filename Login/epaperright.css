@@ -299,6 +299,9 @@ form>input{
     border-radius: 10px;
   
 }
+.payment:hover{
+    cursor: pointer;
+}
 .holder{
     display: flex;
     flex-direction: column;
@@ -347,6 +350,25 @@ form>input{
     .formcolumn{
         display: contents;
     }
+    #paywindow{
+        width: 50%;
+        top: 103px;
+        right: 8px;
+    }
+    #parent{
+        top: 500px;
+        left: 350px;
+       }
+       #popup{
+        width: 50%;
+        
+       
+       }
+       #paywindow{
+        width: 50%;
+        top: 450px;
+       }
+    
 }
 
 @media all and (min-width:320px) and (max-width:671px){
@@ -380,4 +402,6 @@ form>input{
     padding: 10px;
     width: 100%;
    }
+
+ 
 }
