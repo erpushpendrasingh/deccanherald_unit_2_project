@@ -79,7 +79,7 @@
         }
 
         .left-container {
-            width: 60%;
+            width: 65%;
             height: auto;
             margin: auto;
             display: flex;
@@ -92,8 +92,8 @@
 
         .card {
             display: flex;
-            width: 420px;
-            height: 120px;
+            width: 470px;
+            height: 180px;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
@@ -112,9 +112,10 @@
 
         .img-div {
             width: 200px;
-            height: 120px;
+            height: 160px;
             background-size: cover;
             background-repeat: no-repeat;
+
         }
 
         .img-div2 {
@@ -168,6 +169,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            position: relative;
         }
 
         .title-one-div {
@@ -175,7 +177,8 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            width: 100%;
+            width: 80%;
+            margin: auto;
         }
 
         .title-one-div>a {
@@ -209,6 +212,42 @@
             color: black;
 
         }
+
+        .crouser {
+            /* border: 1px solid red; */
+            width: 400px;
+            height: 400px;
+            margin-top: 980px;
+            margin-left: 90px;
+            position: absolute;
+        }
+
+        .crouser>img {
+            /* border: 3px solid red; */
+            height: 400px;
+            width: 400px;
+        }
+
+        .crouser>button {
+            width: 50px;
+            height: 50px;
+            /* border: 1px solid red; */
+            position: relative;
+            bottom: 200px;
+            background-color: transparent;
+            color: red;
+            font-size: 35px;
+
+        }
+
+        .crouser>button:nth-child(3) {
+            left: 0px;
+            border: 1px solid red;
+        }
+
+        .crouser>button:nth-child(4) {
+            left: 290px;
+        }
     </style>
 </head>
 
@@ -232,8 +271,19 @@
             <div class="left-container"></div>
             <div class="right-container">
                 <div class="title-one-div">
-                    <h3 class="tag">INSIGHT</h3>
+                    <h3 class="tag">DH PICKS</h3>
                     <a href="#">VIEW ALL</a>
+                </div>
+                <div class="crouser">
+                    <div class="title-one-div">
+                        <h3 class="tag">WHAT'S BREWING</h3>
+                        <a href="#">VIEW ALL</a>
+                    </div>
+                    <img src=" https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider2.png"
+                        alt="Error" id="image">
+                    <button class="c-btn">
+                        < </button>
+                            <button class="c-btn"> > </button>
                 </div>
             </div>
         </div>
@@ -254,7 +304,7 @@
             h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
             pText: "Featured Content",
             h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
         },
@@ -314,59 +364,103 @@
             h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
             pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            h4Text: "Mithali Raj retires from international cricket ",
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/terrorist-afp-1116334-1654672253.jpg?itok=1upb06iK",
             pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            h4Text: "Al-Qaeda warns of 'suicide bombings' amid Prophet row... ",
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/2022-04-08t071305z45127257rc2uit9za9tartrmadp3india-economy-ratesjpg1-1116304-1654670184.jpg?itok=9UZnETos",
             pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            h4Text: "RBI hikes repo rate by 50 bps, raises inflation... ",
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vijay_Shekhar_Sharma_Paytm_96f52579b8.jpg",
+            h4Text: "Vijay Shekhar Sharma",
+            pText: "Founder & CEO",
+
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Rectangle_427_637d69bb57.png",
+            h4Text: "Kunal Shah",
+            pText: "Founder",
+
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/amrish_rau_pine_labs_144e5e587c.jpg",
+            h4Text: "Amrish Rau",
+            pText: "CEO",
+
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Sampad_swain_Instamojo_f12bf6341e.jpg",
+            h4Text: "Sampad Swain",
+            pText: "Co-Founder & CEO",
+
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+            h4Text: "Ankush Sachdeva",
+            pText: "Co-Founder & CEO",
+
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/bhanu_pratap_singh_sharechat_11fdd7b47a.jpg",
+            h4Text: "Bhanu Pratap Singh",
+            pText: "Co-Founder & CTO",
+
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/farid_ahsan_sharechat_1251f28141.png",
+            h4Text: "Farid Ahsan",
+            pText: "Co-Founder & COO",
+
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Amit_Kumar_Agarwal_Nobroker_a8a279ad91.jpg",
+            h4Text: "Amit Kumar Agarwal",
+            pText: "Founder & CEO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Akhil_Gupta_Nobroker_539cd97f6c.jpg",
+            h4Text: "Akhil Gupta",
+            pText: "Founder & CTO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/saurbh_garg_nobroker_c0c71cc431.jpeg",
+            h4Text: "Saurabh Garg",
+            pText: "Co-Founder & CBO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Vipin_Pathak_Care24_acd02cd173.jpg",
+            h4Text: "Vipin Pathak",
+            pText: "Co-Founder & CEO",
+
+        },
+        {
+            image:
+                "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ramakant_Sharma_livespace_0308e3627d.jpg",
+            h4Text: "Ramakant Sharma",
+            pText: "Founder",
+
         },
         {
             image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
@@ -545,9 +639,29 @@
             pText: "Featured Content",
             h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
         }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
             pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            h4Text: "Mithali Raj retires from international cricket ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/terrorist-afp-1116334-1654672253.jpg?itok=1upb06iK",
+            pText: "Featured Content",
+            h4Text: "Al-Qaeda warns of 'suicide bombings' amid Prophet row... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/2022-04-08t071305z45127257rc2uit9za9tartrmadp3india-economy-ratesjpg1-1116304-1654670184.jpg?itok=9UZnETos",
+            pText: "Featured Content",
+            h4Text: "RBI hikes repo rate by 50 bps, raises inflation... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/407034-01-02-1-1116108-1654603315-1-1116276-1654654317.jpg?itok=BvMPcHqz",
+            pText: "Featured Content",
+            h4Text: " BJP making inroads in Mizoram eyeing 2023 elections...",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
+            pText: "Featured Content",
+            h4Text: "Apollo Hospitals: Tech and talent to beat cancer... ",
         }, {
             image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
             pText: "Featured Content",
@@ -633,6 +747,35 @@
             pText: "Featured Content",
             h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
         }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
+            pText: "Featured Content",
+            h4Text: "Mithali Raj retires from international cricket ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/terrorist-afp-1116334-1654672253.jpg?itok=1upb06iK",
+            pText: "Featured Content",
+            h4Text: "Al-Qaeda warns of 'suicide bombings' amid Prophet row... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/2022-04-08t071305z45127257rc2uit9za9tartrmadp3india-economy-ratesjpg1-1116304-1654670184.jpg?itok=9UZnETos",
+            pText: "Featured Content",
+            h4Text: "RBI hikes repo rate by 50 bps, raises inflation... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/407034-01-02-1-1116108-1654603315-1-1116276-1654654317.jpg?itok=BvMPcHqz",
+            pText: "Featured Content",
+            h4Text: " BJP making inroads in Mizoram eyeing 2023 elections...",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
+            pText: "Featured Content",
+            h4Text: "Apollo Hospitals: Tech and talent to beat cancer... ",
+        }, {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            pText: "Featured Content",
+            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+        },
+        {
             image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
             pText: "Featured Content",
             h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
@@ -672,83 +815,53 @@
             image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
             pText: "Featured Content",
             h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
             pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            h4Text: "Mithali Raj retires from international cricket ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/terrorist-afp-1116334-1654672253.jpg?itok=1upb06iK",
             pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            h4Text: "Al-Qaeda warns of 'suicide bombings' amid Prophet row... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/2022-04-08t071305z45127257rc2uit9za9tartrmadp3india-economy-ratesjpg1-1116304-1654670184.jpg?itok=9UZnETos",
             pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            h4Text: "RBI hikes repo rate by 50 bps, raises inflation... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/407034-01-02-1-1116108-1654603315-1-1116276-1654654317.jpg?itok=BvMPcHqz",
             pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
+            h4Text: " BJP making inroads in Mizoram eyeing 2023 elections...",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
             pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
-        }, {
-            image: "https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/hfjghghghgh.png?itok=pAw6Egq0",
-            pText: "Featured Content",
-            h4Text: " Top Progressive Web App(PWA) Development Companies In India ",
+            h4Text: "Apollo Hospitals: Tech and talent to beat cancer... ",
         },
     ];
     let data2 = [
         {
-            image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/mithali-raj-pti-1116350-1654680974.jpg?itok=XF2sjG8i",
             pText: "Featured Content",
-            h4Text: "Apollo Hospitals: Tech and talent to beat cancer... ",
+            h4Text: "Mithali Raj retires from international cricket ",
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/terrorist-afp-1116334-1654672253.jpg?itok=1upb06iK",
             pText: "Featured Content",
-            h4Text: "Apollo Hospitals: Tech and talent to beat cancer... ",
+            h4Text: "Al-Qaeda warns of 'suicide bombings' amid Prophet row... ",
         },
         {
-            image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/2022-04-08t071305z45127257rc2uit9za9tartrmadp3india-economy-ratesjpg1-1116304-1654670184.jpg?itok=9UZnETos",
             pText: "Featured Content",
-            h4Text: "Apollo Hospitals: Tech and talent to beat cancer... ",
+            h4Text: "RBI hikes repo rate by 50 bps, raises inflation... ",
+        },
+        {
+            image: "https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/08/407034-01-02-1-1116108-1654603315-1-1116276-1654654317.jpg?itok=BvMPcHqz",
+            pText: "Featured Content",
+            h4Text: " BJP making inroads in Mizoram eyeing 2023 elections...",
         },
         {
             image: "https://www.deccanherald.com/sites/dh/files/dhfdtrtdrt.png",
@@ -821,4 +934,33 @@
         // right-container
 
     });
+    let img = document.querySelector("#image");
+    let button = document.querySelectorAll(".c-btn");
+    console.log(button)
+    imgNum = 0;
+    let imgArr = [
+        "https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider1.png",
+        "https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider2.png",
+        "https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider3.png",
+        "https://raw.githubusercontent.com/Sourav12061999/react-3D-movie-app/main/public/slider3.png",
+
+    ]
+    console.log(imgArr)
+    button[0].addEventListener("click", function () {
+        if (imgNum == 0) {
+            imgNum = imgArr.length - 1;
+        } else {
+            imgNum--;
+        }
+        img.src = imgArr[imgNum]
+    })
+    button[1].addEventListener("click", function () {
+        if (imgNum == imgArr.length - 1) {
+            imgNum = 0;
+        } else {
+            imgNum++;
+        }
+        img.src = imgArr[imgNum]
+    })
+
 </script>
