@@ -13,8 +13,7 @@ Team Members:
 5. Ankit Mandawkar : fw19_0997
 6. Pratik Derepatil : fw19_1180
 
-Task Assigned : 
-Day 1 : 14/06/2022
+Task Assigned :=
 1. fp04_022 : Login Page, Sigh Up & Payment.
 2. fp04_204 : Bengaluru Page.
 3. fw18_1121 : Inactive.
