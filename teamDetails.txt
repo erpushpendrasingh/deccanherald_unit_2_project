@@ -15,9 +15,9 @@ Team Members:
 
 Task Assigned : 
 Day 1 : 14/06/2022
-1. fp04_022 : Login Page. 
+1. fp04_022 : Login Page, Sigh Up & Payment.
 2. fp04_204 : Bengaluru Page.
-3. fw18_1121 : 
-4. fw19_0676 : Navbar.
-5. fw19_0997 : 
+3. fw18_1121 : Inactive.
+4. fw19_0676 : Navbar, Footer, Epaper & Newsletter.
+5. fw19_0997 : Inactive.
 6. fw19_1180 : Home Page.
