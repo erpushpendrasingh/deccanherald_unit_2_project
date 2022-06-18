@@ -12,11 +12,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Source+Serif+Pro&display=swap"
         rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="karnataka.css">
     <title>Karnataka News</title>
 </head>
 
 <body>
+    <div id="head-nav"></div>
     <div class="main-container">
         <!-- <!-- <div></div>           <---- pending  -->
         <div class="tab-section">
@@ -40,7 +45,7 @@
             <!-- first card -->
             <div class="stories-card-one">
                 <div class="title-1">
-                    <h4>Mekedatu: CM calls TN's letter to PM 'publicity stunt'</h4>
+                    <h4 id="detail-news">Mekedatu: CM calls TN's letter to PM 'publicity stunt'</h4>
                 </div>
             </div>
 
@@ -52,7 +57,7 @@
                             alt="Error">
                     </div>
                     <div class="title">
-                        <h4>HC seeks govt's reply over Rapido’s contempt petition </h4>
+                        <h4 id="detail-news">HC seeks govt's reply over Rapido’s contempt petition </h4>
                     </div>
 
                 </div>
@@ -63,7 +68,7 @@
                                 alt="Error">
                         </div>
                         <div class="title">
-                            <h4>HC seeks govt's reply over Rapido’s contempt petition </h4>
+                            <h4 id="detail-news">HC seeks govt's reply over Rapido’s contempt petition </h4>
                         </div>
 
                     </div>
@@ -75,7 +80,7 @@
                                 alt="Error">
                         </div>
                         <div class="title">
-                            <h4>HC seeks govt's reply over Rapido’s contempt petition </h4>
+                            <h4 id="detail-news">HC seeks govt's reply over Rapido’s contempt petition </h4>
                         </div>
 
                     </div>
@@ -88,7 +93,7 @@
                             alt="Error">
                     </div>
                     <div class="title">
-                        <h4>Architect not responsible for accidental death: HC</h4>
+                        <h4 id="detail-news">Architect not responsible for accidental death: HC</h4>
                     </div>
 
                 </div>
@@ -98,7 +103,7 @@
                             alt="Error">
                     </div>
                     <div class="title">
-                        <h4>Architect not responsible for accidental death: HC</h4>
+                        <h4 id="detail-news">Architect not responsible for accidental death: HC</h4>
                     </div>
 
                 </div>
@@ -108,18 +113,18 @@
                             alt="Error">
                     </div>
                     <div class="title">
-                        <h4>Architect not responsible for accidental death: HC</h4>
+                        <h4 id="detail-news">Architect not responsible for accidental death: HC</h4>
                     </div>
 
                 </div>
             </div>
             <div class="stories-card-four">
                 <div>
-                    <h4>HC upholds translocation of jumbos to Gujarat</h4>
-                    <h4>People protest against Bedti-Varada river link plan</h4>
-                    <h4>Justice B S Patil appointed Karnataka Lokayukta</h4>
-                    <h4>Love is blind & stronger than parents' love: K'taka HC</h4>
-                    <h4>TN CM’s letter to PM on Mekedatu illegal: Bommai</h4>
+                    <h4 id="detail-news">HC upholds translocation of jumbos to Gujarat</h4>
+                    <h4 id="detail-news">People protest against Bedti-Varada river link plan</h4>
+                    <h4 id="detail-news">Justice B S Patil appointed Karnataka Lokayukta</h4>
+                    <h4 id="detail-news">Love is blind & stronger than parents' love: K'taka HC</h4>
+                    <h4 id="detail-news">TN CM’s letter to PM on Mekedatu illegal: Bommai</h4>
                 </div>
             </div>
             <div class="stories-card-five">
@@ -272,6 +277,25 @@
 
         </div>
     </div>
+    <div id="foot"></div>
 </body>
+<script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
+<script src="./head.js"></script>
+<script>
+    $(function () {
+        $("#foot").load("foot.html");
+    });
+</script>
+<script>
+    $(function () {
+        $("#head-nav").load("head.html");
+    });
+</script>
+
+<script>
+    document.getElementById("detail-news").addEventListener("click", function () {
+        window.location.href = "details.html"
+    })
+</script>
 
 </html>
