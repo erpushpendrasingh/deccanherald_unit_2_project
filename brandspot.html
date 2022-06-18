@@ -248,6 +248,54 @@
         .crouser>button:nth-child(4) {
             left: 290px;
         }
+
+        a {
+            cursor: pointer;
+
+        }
+
+        p {
+            cursor: pointer;
+
+        }
+
+        h6 {
+            cursor: pointer;
+
+        }
+
+        a:hover {
+            text-decoration: underline;
+            background-color: white;
+            color: black;
+            border: 2px solid green;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            ;
+
+        }
+
+        h6:hover {
+            text-decoration: underline;
+
+        }
+
+        p:hover {
+            text-decoration: underline;
+
+        }
+
+        img:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid green;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
     </style>
 </head>
 
@@ -885,6 +933,9 @@
 
         let pTag = document.createElement("p");
         pTag.innerText = elem.pText;
+        pTag.style.cursor = "pointer";
+
+
 
         let h6 = document.createElement("h6");
         h6.innerText = elem.h4Text;
