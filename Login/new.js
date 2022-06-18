@@ -649,28 +649,25 @@ function loginbutton() {
     document.querySelector("#loginline").style.backgroundColor = "#0087a8"
     document.querySelector("#subsline").style.backgroundColor = "gray"
 }
-let newarr = [{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},]
-for(let i=0;i<newarr.length;i++){
-    console.log(newarr[i].name === "good")
-}
+// let newarr = [{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},]
+// for(let i=0;i<newarr.length;i++){
+//     console.log(newarr[i].name === "good")
+// }
 function details() {
 
   
     // let email = document.querySelector("#email").value
        
+    // let newarr = JSON.parse(localStorage.getItem("details")) || []
     function check(email){
-        let newarr = JSON.parse(localStorage.getItem("details")) || []
         
-        for (let i = 0; newarr.length; i++) {
-            if (newarr[i].Email == email) {
+        for (let i = 0; i<arr.length; i++) {
+            if (arr[i].Email == email) {
                   
                 exist()
                 return false
                          
                    
-                }else{
-                    console.log(newarr)
-                    console.log(email)
                 }
             } 
             return true 
