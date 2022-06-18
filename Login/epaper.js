@@ -653,26 +653,23 @@ function loginbutton() {
 function details() {
 
   
-        let email = document.querySelector("#email").value
+    // let email = document.querySelector("#email").value
        
-        arr.forEach(function (elem, ind) {
-            for (let i = 0; arr.length; i++) {
-                if (arr[i].Email === email) {
+    function check(email){
+        for (let i = 0; arr.length; i++) {
+            if (arr[i].Email === email) {
                   
-                    exist()
-                  console.log(true)
-                  break;
+                exist()
+                return false
+                         
                    
-                  
-                   
-                }else{
-                    console.log("boom")
-                    
-                  break;
                 }
-            }
+            } 
+            return true 
+
+    }
     
-        })
+        
     
     
   
@@ -717,9 +714,14 @@ function details() {
             Name: document.querySelector("#name").value,
             Password: document.querySelector("#password").value,
         }
-        arr.push(obj)
-       localStorage.setItem("details", JSON.stringify(arr))
-        paywindow()
+        
+        if(check(obj.Email)){
+            arr.push(obj)
+            localStorage.setItem("details", JSON.stringify(arr))
+            paywindow()
+        }
+       
+       
         messageholder.style.padding = "0px"
         messageholder.innerHTML = ""
     } else {
