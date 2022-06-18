@@ -9,12 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
         rel="stylesheet" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="video.css">
     <title>Document</title>
 
 </head>
 
 <body>
+    <div id="head-nav"></div>
+
     <div class="main-container">
         <div class="first-div">
             <div class="a-tag-">
@@ -342,6 +348,19 @@
             </div>
         </div>
     </div>
+    <div id="foot"></div>
 </body>
+<script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
+<script src="./head.js"></script>
+<script>
+    $(function () {
+        $("#foot").load("foot.html");
+    });
+</script>
+<script>
+    $(function () {
+        $("#head-nav").load("head.html");
+    });
+</script>
 
 </html>

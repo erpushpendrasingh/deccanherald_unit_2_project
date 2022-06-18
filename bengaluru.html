@@ -12,11 +12,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Source+Serif+Pro&display=swap"
         rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="bengaluru.css">
     <title>Bengaluru</title>
 </head>
 
 <body>
+    <div id="head-nav"></div>
     <div class="main-container">
         <!-- <!-- <div></div>           <---- pending  -->
         <div class="tab-section">
@@ -50,17 +55,17 @@
                 <div class="snippet">
                     <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/13/file7lel4sxs5821bsnhthtn-1117654-1655078480.jpg?itok=35v8686q"
                         alt="Error">
-                    <h4>RR Nagar to get flyover, two underpasses and SWM...</h4>
+                    <h4 id="detail-news">RR Nagar to get flyover, two underpasses and SWM...</h4>
                 </div>
                 <div class="snippet">
                     <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/13/file7lel4sxs5821bsnhthtn-1117654-1655078480.jpg?itok=35v8686q"
                         alt="Error">
-                    <h4>Popcorn vendor arrested for 'spitting into cooking oil'...</h4>
+                    <h4 id="detail-news"> Popcorn vendor arrested for 'spitting into cooking oil'...</h4>
                 </div>
                 <div class="snippet">
                     <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/13/file7lel4sxs5821bsnhthtn-1117654-1655078480.jpg?itok=35v8686q"
                         alt="Error">
-                    <h4>RR Nagar to get flyover, two underpasses and SWM...</h4>
+                    <h4 id="detail-news">RR Nagar to get flyover, two underpasses and SWM...</h4>
                 </div>
             </div>
         </div>
@@ -73,7 +78,7 @@
                             alt="Error">
                     </div>
                     <div class="title-1">
-                        <h4>PM-Kisan website loophole risked 11 crore Aadhaar IDs...
+                        <h4 id="detail-news">PM-Kisan website loophole risked 11 crore Aadhaar IDs...
                         </h4>
                         <p>2 hrs ago</p>
                     </div>
@@ -84,18 +89,18 @@
                             alt="Error">
                     </div>
                     <div class="title-1">
-                        <h4>Love is blind & stronger than parents' love: K'taka...
+                        <h4 id="detail-news">Love is blind & stronger than parents' love: K'taka...
                         </h4>
                         <p>2 hrs ago</p>
                     </div>
                 </div>
             </div>
             <div class="container-two">
-                <h4>Academic activities in Jel (J&K)-run schools ceased</h4>
-                <h4>BJP's stance on history gets thumbs down from Nitish</h4>
-                <h4>ED questions Rahul for 2nd consecutive day in PMLA case</h4>
-                <h4>India would become $5-trillion economy by 2026-27: CEA</h4>
-                <h4>Bengaluru is world's top 5th hub for tech investments</h4>
+                <h4 id="detail-news">Academic activities in Jel (J&K)-run schools ceased</h4>
+                <h4 id="detail-news">BJP's stance on history gets thumbs down from Nitish</h4>
+                <h4 id="detail-news">ED questions Rahul for 2nd consecutive day in PMLA case</h4>
+                <h4 id="detail-news">India would become $5-trillion economy by 2026-27: CEA</h4>
+                <h4 id="detail-news">Bengaluru is world's top 5th hub for tech investments</h4>
             </div>
             <div class="container-three">
                 <div class="card-2">
@@ -104,7 +109,7 @@
                             alt="Error">
                     </div>
                     <div>
-                        <h4>BJP hails PM's promise to recruit 10L people...</h4>
+                        <h4 id="detail-news">BJP hails PM's promise to recruit 10L people...</h4>
                     </div>
                 </div>
                 <div class="card-2">
@@ -282,13 +287,31 @@
                 <div class="five">
                     <img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/14/file7lf4jdzhrnbocm6h7x8-1117943-1655155176.jpg?itok=uBXIIz8K"
                         alt="Error">
-                    <h4>BMTC extends validity of student bus pass till June...</h4>
+                    <h4 id="detail-news">BMTC extends validity of student bus pass till June...</h4>
                     <p>12th jun 2022</p>
                 </div>
             </div>
         </div>
 
     </div>
+    <div id="foot"></div>
 </body>
+<script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
+<script src="./head.js"></script>
+<script>
+    $(function () {
+        $("#foot").load("foot.html");
+    });
+</script>
+<script>
+    $(function () {
+        $("#head-nav").load("head.html");
+    });
+</script>
+<script>
+    document.getElementById("detail-news").addEventListener("click", function () {
+        window.location.href = "details.html"
+    })
+</script>
 
 </html>
