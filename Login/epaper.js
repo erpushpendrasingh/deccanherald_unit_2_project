@@ -649,25 +649,24 @@ function loginbutton() {
     document.querySelector("#loginline").style.backgroundColor = "#0087a8"
     document.querySelector("#subsline").style.backgroundColor = "gray"
 }
-
+let arr2 = [{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},]
+    arr2.forEach(function(elem){
+        console.log(elem.name)
+    })
 function details() {
 
   
-    // let email = document.querySelector("#email").value
-       
-    function check(email){
-        for (let i = 0; arr.length; i++) {
-            if (arr[i].Email === email) {
-                  
-                exist()
-                return false
-                         
-                   
-                }
-            } 
-            return true 
-
-    }
+    let count = 0
+    
+    arr.forEach(function(elem){
+        let email = document.querySelector("#email").value
+        if(elem.Email === email){
+            count++
+           
+        }
+       })
+     
+    
     
         
     
@@ -714,11 +713,13 @@ function details() {
             Name: document.querySelector("#name").value,
             Password: document.querySelector("#password").value,
         }
-        
-        if(check(obj.Email)){
+       
+        if(count === 0){
             arr.push(obj)
             localStorage.setItem("details", JSON.stringify(arr))
             paywindow()
+        }else{
+            exist()
         }
        
        
