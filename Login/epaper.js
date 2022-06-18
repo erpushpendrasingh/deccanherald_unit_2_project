@@ -131,6 +131,8 @@ function displayLogin() {
         details.forEach(function(elem, ind){
             if(elem.Email=== email && elem.Password=== pass){
                 alert(" Successfully Logged in")
+            }else{
+                alert("Please enter correct credential")
             }
         })
     })
@@ -649,10 +651,7 @@ function loginbutton() {
     document.querySelector("#loginline").style.backgroundColor = "#0087a8"
     document.querySelector("#subsline").style.backgroundColor = "gray"
 }
-let arr2 = [{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},]
-    arr2.forEach(function(elem){
-        console.log(elem.name)
-    })
+
 function details() {
 
   

@@ -402,6 +402,22 @@ form>input{
     padding: 10px;
     width: 100%;
    }
-
  
+   #paywindow{
+    width: 100%;
+    top:1000px
+   }
+ #popup{
+    width: 100%;
+  
+ }
+ #parent {
+    top: 1700px
+ }
+ #subscribe{
+    font-size: 12px;
+ }
+ .anchor{
+    font-size: 17px;
+ }
 }
