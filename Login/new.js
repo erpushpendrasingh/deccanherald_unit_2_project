@@ -131,8 +131,6 @@ function displayLogin() {
         details.forEach(function(elem, ind){
             if(elem.Email=== email && elem.Password=== pass){
                 alert(" Successfully Logged in")
-            }else{
-                alert("Please enter correct credential")
             }
         })
     })
@@ -651,20 +649,39 @@ function loginbutton() {
     document.querySelector("#loginline").style.backgroundColor = "#0087a8"
     document.querySelector("#subsline").style.backgroundColor = "gray"
 }
-
+let newarr = [{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},]
+for(let i=0;i<newarr.length;i++){
+    console.log(newarr[i].name === "good")
+}
 function details() {
 
   
-    let count = 0
+    // let email = document.querySelector("#email").value
+       
+    function check(email){
+        let newarr = JSON.parse(localStorage.getItem("details")) || []
+        
+        for (let i = 0; newarr.length; i++) {
+            if (newarr[i].Email == email) {
+                  
+                exist()
+                return false
+                         
+                   
+                }else{
+                    console.log(newarr)
+                    console.log(email)
+                }
+            } 
+            return true 
+
+    }
     
-    arr.forEach(function(elem){
-        let email = document.querySelector("#email").value
-        if(elem.Email === email){
-            count++
-           
-        }
-       })
-     
+        
+    
+    
+  
+
     if (inputf === true && input1f === true) {
         dailypaperflag = false
     } else if (inputf === false && input1f === false) {
@@ -683,8 +700,6 @@ function details() {
     let alert4 = document.createElement("li")
     let alert5 = document.createElement("li")
 
-    arr = [{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},]
-    
     function formfilled() {
 
         if (emailflag === true && termflag === true && mobileflag === true
@@ -707,13 +722,11 @@ function details() {
             Name: document.querySelector("#name").value,
             Password: document.querySelector("#password").value,
         }
-       
-        if(count === 0){
+        
+        if(check(obj.Email)){
             arr.push(obj)
             localStorage.setItem("details", JSON.stringify(arr))
             paywindow()
-        }else{
-            exist()
         }
        
        
