@@ -43,7 +43,7 @@ let dhPicks = [
         title: "Tax ruling emboldens states against Modi’s government"
     }
 ]
-let latest = [
+let latestNews = [
     {
         href: "https://www.deccanherald.com/national/national-politics/after-sharad-pawar-declines-oppn-considering-gopalkrishna-gandhi-farooq-abdullah-for-presidential-polls-1118415.html",
         title: "Mayawati, Varun Gandhi slam govt's 'Agnipath' scheme"
@@ -114,7 +114,7 @@ $(document).ready(function () {
     
 })
 $(document).ready(function () { 
-    latest.forEach(el => {
+    latestNews.forEach(el => {
         let li = document.createElement("li")
         let a = document.createElement("a")
         a.setAttribute("target", "_blank")
@@ -138,13 +138,13 @@ $(document).ready(function () {
     
 })
 
-let plus = document.querySelectorAll(".side-nav-list")
+let plus1 = document.querySelectorAll(".side-nav-list")
 let list = document.querySelectorAll(".lists")
-for (let i = 0; i < plus.length; i++) {
-    plus[i].addEventListener("click", function () {
+for (let i = 0; i < plus1.length; i++) {
+    plus1[i].addEventListener("click", function () {
         list[i].classList.toggle("show")
-        plus[i].classList.toggle("collapsed")
-        removeClass(list[i],plus[i])
+        plus1[i].classList.toggle("collapsed")
+        removeClass(list[i],plus1[i])
     })
 }
 
@@ -156,7 +156,7 @@ function removeClass(x,y) {
             el.classList.remove("show")
         }
     })
-    plus.forEach(el => {
+    plus1.forEach(el => {
         if (el != y) { 
             el.classList.remove("show")
             el.classList.add("collapsed")

@@ -4,7 +4,7 @@
     box-sizing: border-box;    
     font-family: 'Source Sans Pro', sans-serif;
 }
-.section-container {
+.section-container1 {
     width: auto;
     max-width: 1180px;
     float: none;
@@ -190,7 +190,7 @@ input[type=text]{
     height: 32px;
     position: relative;
 }
-.fa-solid {
+#see-latest .fa-solid {
     margin-left: 10px;
     font-size: 17px !important;
     line-height: 2px !important;
@@ -267,7 +267,7 @@ input:focus
 }
 
 @media all and (min-width: 992px) and (max-width: 1199px){
-    .section-container {
+    .section-container1 {
     width: auto;
     max-width: 780px;
     float: none;
@@ -287,7 +287,7 @@ input:focus
 }
 
 @media all and (min-width: 650px) and (max-width: 991px){
-    .section-container {
+    .section-container1 {
     width: 97%;
     max-width: 780px;
     float: none;
@@ -306,7 +306,7 @@ input:focus
 }
 }
 @media all and (min-width: 0px) and (max-width: 649px){
-    .section-container {
+    .section-container1 {
     width: 95%;
     max-width: 370px;
     float: none;

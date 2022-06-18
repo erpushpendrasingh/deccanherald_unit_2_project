@@ -45,7 +45,7 @@ header {
 } */
 #side-nav{
     display: block;
-    position: absolute;
+    position: fixed;
     left: 0;
     background: #0087a8;
     height: 100vh;
@@ -78,6 +78,7 @@ header {
 .side-nav-overlay.overlay-active {
     opacity: 1;
     visibility: visible;
+    overflow: hidden;
 }
 .side-nav-main{
     color: white;
