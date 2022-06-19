@@ -443,3 +443,32 @@ float:right;
 .mtop-d-20 {
     margin-top: 20px;
 }
+
+
+@media all and (min-width: 992px) and (max-width: 1199px){
+.section-container {
+    width: auto;
+    max-width: 780px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+}
+
+@media all and (min-width: 768px) and (max-width: 1199px){
+ 
+    /* .grid-col-full {
+    float: left;
+    clear: none;
+    text-align: inherit;
+    width: 48.75%;
+    margin-left: 0;
+    margin-right: 2.5%;
+} */
+section {
+    padding: 18px 0;
+}
+}
