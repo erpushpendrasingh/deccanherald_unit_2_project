@@ -34,7 +34,17 @@
 			gap: 15px;
 		}
 
-		.th:hover {
+		.beng {
+			display: grid;
+			background-color: #f0f5f4;
+			grid-template-columns: 740px 380px;
+			justify-content: center;
+			gap: 30px;
+			padding: 18px;
+		}
+
+		.th:hover,
+		h5:hover {
 			text-decoration: underline;
 		}
 
@@ -127,7 +137,7 @@
 		.new34,
 		.new23>div,
 		.new35,
-		.new24>div{
+		.new24>div {
 			background-color: #f0f5f4;
 		}
 
@@ -147,10 +157,50 @@
 			padding: 0 0 0 15px;
 		}
 
-		h3 {
-			margin-left: 13%;
-			margin-bottom: 0px;
+		.heading {
+			display: flex;
+			width: 75%;
+			justify-content: space-between;
+			margin: auto;
 		}
+
+		.beng1 {
+			display: flex;
+			background-color: #68a924;
+			color: white;
+			margin-bottom: 15px;
+		}
+		.beng2 {
+			width: 740px;
+			display: grid;
+			gap: 15px;
+			grid-template-columns: repeat(3, 235px);
+			align-items: flex-start;
+
+		}
+		.beng2>div{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			background-color: white;
+		}
+		.beng3{
+			display: flex;
+			flex-direction: column;
+			background-color: white;
+			height: fit-content;
+			width: 380px;
+		}
+		.beng2>div>p,.beng3>p{
+			padding: 0 18px;
+			background-color: white;
+		
+		}
+
+		.beng1>h2 {
+			padding: 20px 30px;
+		}
+
 
 		@media only screen and (min-width: 500px) and (max-width: 768px) {
 			.main {
@@ -167,9 +217,27 @@
 				grid-auto-flow: column;
 			}
 
-			h3 {
-				margin-left: 3%;
-				margin-bottom: 0px;
+			.heading {
+				display: flex;
+				width: 96%;
+				margin: auto;
+			}
+
+			.beng{
+				display: grid;
+				grid-template-columns: 740px;
+				grid-template-rows: repeat(2,280px);
+				justify-content: center;
+				gap: 30px;
+				padding: 18px;
+				height: auto;
+			}
+			.beng3{
+				display: none;
+			}
+			.th:hover,
+			h5:hover {
+				text-decoration: underline;
 			}
 		}
 
@@ -181,6 +249,12 @@
 				grid-auto-flow: column;
 			}
 
+			.heading {
+				display: flex;
+				width: 96%;
+				margin: auto;
+			}
+
 			.story {
 				display: grid;
 				grid-template-columns: repeat(1, 380px);
@@ -188,9 +262,9 @@
 				grid-auto-flow: column;
 			}
 
-			h3 {
-				margin-left: 3%;
-				margin-bottom: 0px;
+			.th:hover,
+			h5:hover {
+				text-decoration: underline;
 			}
 		}
 	</style>
@@ -218,7 +292,11 @@
 
 		</div>
 	</div>
-	<h3>MORE TOP STORIES</h3>
+	<div class="heading">
+		<h3>MORE TOP STORIES</h3>
+		<div></div>
+		<h6>VIEW ALL</h6>
+	</div>
 	<div class="story">
 		<div class="new22">
 
@@ -227,7 +305,48 @@
 
 		</div>
 	</div>
-	<h3>KARANTAKA</h3>
+
+	<div class="heading">
+		<h3>BENGALURU</h3>
+		<div></div>
+		<h6>VIEW ALL</h6>
+	</div>
+	<div class="beng">
+		<div>
+			<div class="beng1 th">
+				<img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/06/18/whatsapp-image-2022-06-18-at-122555-pm-1119201-1655543224.jpg?itok=BXPjOTf7"
+					alt="Error">
+				<h2>Singapura lake breach leaves houses flooded</h2>
+			</div>
+			<div class="beng2">
+				<div>
+					<img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/18/whatsapp-image-2022-06-18-at-114531-am-1119177-1655535027.jpg?itok=l0mdJ69S"
+						alt="Error">
+					<p>B'luru rains: Search on for man who fell into...</p>
+				</div>
+				<div>
+					<img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/18/whatsapp-image-2022-06-18-at-114531-am-1119177-1655535027.jpg?itok=l0mdJ69S"
+						alt="Error">
+					<p>B'luru rains: Search on for man who fell into...</p>
+				</div>
+				<div>
+					<img src="https://www.deccanherald.com/sites/dh/files/styles/smallvertical/public/articleimages/2022/06/18/whatsapp-image-2022-06-18-at-114531-am-1119177-1655535027.jpg?itok=l0mdJ69S"
+						alt="Error">
+					<p>B'luru rains: Search on for man who fell into...</p>
+				</div>
+			</div>
+		</div>
+		<div class="beng3">
+			<img src="https://www.deccanherald.com/sites/dh/files/styles/largevertical/public/articleimages/2022/06/18/file7lh5omp7i1tpecn68kk-1119107-1655517939.jpg?itok=bmB1VHsV" alt="">
+			<p>BU hostel given for Covid care returned in messy...</p>
+		</div>
+	</div>
+
+	<div class="heading">
+		<h3>KARANTAKA</h3>
+		<div></div>
+		<h6>VIEW ALL</h6>
+	</div>
 	<div class="story">
 		<div class="new23">
 
@@ -236,7 +355,11 @@
 
 		</div>
 	</div>
-	<h3>MORE FROM KARANTAKA</h3>
+	<div class="heading">
+		<h3>MORE FROM KARANTAKA</h3>
+		<div></div>
+		<h6>VIEW ALL</h6>
+	</div>
 	<div class="story">
 		<div class="new24">
 
@@ -245,8 +368,12 @@
 
 		</div>
 	</div>
-	<h3>NATIONAL</h3>
-	<div class="main">
+	<div class="heading">
+		<h3>NATIONAL</h3>
+		<div></div>
+		<h6>VIEW ALL</h6>
+	</div>
+	<div class="story">
 		<div class="new25">
 
 		</div>
