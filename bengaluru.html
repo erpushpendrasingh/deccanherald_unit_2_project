@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Source+Sans +Pro:wght@400;600;700&display=swap" 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans +Pro:wght@400;600;700&display=swap" 
         rel="stylesheet"> >
     <link
         href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Source+Serif+Pro&display=swap"
@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    <div id="head-nav"></div>
+    <div id="header"></div>
     <div class="main-container">
-        <!-- <!-- <div></div>           <---- pending  -->
+       
     <div class="tab-section">
         <div class="page-heading">
             <h1>Bengaluru</h1>
@@ -294,20 +294,18 @@
     </div>
 
     </div>
-    <div id="foot"></div>
+    <div id="footer"></div>
     </body>
     <script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
     <script src="./head.js"></script>
-    <script>
-        $(function () {
-            $("#foot").load("foot.html");
-        });
-    </script>
-    <script>
-        $(function () {
-            $("#head-nav").load("head.html");
-        });
-    </script>
+  <script>
+    $(function () {
+        $("#header").load("nav.html");
+    });
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+</script>
     <script>
         document.getElementById("detail-news").addEventListener("click", function () {
             window.location.href = "details.html"

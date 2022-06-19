@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <div id="head-nav"></div>
+    <div id="header"></div>
     <div class="main-container">
         <div class="icon2">
             <a href=""><img
@@ -1522,7 +1522,7 @@
             </a>
 
         </div>
-        <!-- title bar -->
+        <!-- title   bar -->
         <div class="first-div">
             <div class="a-tag-">
                 <a href="#">Home</a>
@@ -1860,10 +1860,17 @@
             </div>
         </div>
     </div>
-    <div id="foot"></div>
+    <div id="footer"></div>
 
 </body>
-
+  <script>
+    $(function () {
+        $("#header").load("nav.html");
+    });
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+</script>
 </html>
 <script>
     let img = document.querySelector("#image");
@@ -1895,13 +1902,3 @@
 </script>
 <script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
 <script src="./head.js"></script>
-<script>
-    $(function () {
-        $("#foot").load("foot.html");
-    });
-</script>
-<script>
-    $(function () {
-        $("#head-nav").load("head.html");
-    });
-</script>

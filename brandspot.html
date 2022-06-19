@@ -23,7 +23,7 @@
 
 
 <body>
-    <div id="head-nav"></div>
+    <div id="header"></div>
     <div class="main-container">
         <div class="first-div">
             <div class="a-tag">
@@ -60,9 +60,16 @@
             </div>
         </div>
     </div>
-    <div id="foot"></div>
+    <div id="footer"></div>
 </body>
-
+  <script>
+    $(function () {
+        $("#header").load("nav.html");
+    });
+    $(function () {
+        $("#footer").load("footer.html");
+    });
+</script>
 </html>
 <script>
     let data = [
