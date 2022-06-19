@@ -25,6 +25,7 @@ overlay.addEventListener("click", () => {
 })
 
 function removeClass(x) {
+    console.log("hi")
     show.forEach(el => {
         if (el != x) { 
             el.classList.remove("show")

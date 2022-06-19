@@ -87,7 +87,7 @@ header {
     text-transform: uppercase;    
     line-height: 62px;
     transition: -ms-transform .5s,transform .5s !important;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     height: 83vh;
     margin-right: -25px;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
@@ -236,6 +236,7 @@ p>span{
     height: 30px;
     background-color: #0087a8;
     margin-top: 3px;
+    z-index: 100000;
 }
 
 
@@ -560,6 +561,7 @@ p>span{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
     }
     #right-nav>div:nth-child(1){
         display: inline-flex;
