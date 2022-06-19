@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-mgr">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="mgr" clip-path="url(#clip-mgr)">
+    <rect width="32" height="32" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="32" height="32" fill="#0082fd"/>
+    <path id="Icon_awesome-facebook-messenger" data-name="Icon awesome-facebook-messenger" d="M12.527.563C5.786.563.563,5.489.563,12.143a11.318,11.318,0,0,0,3.758,8.565c.4.362.319.571.387,2.8a.959.959,0,0,0,1.342.846c2.547-1.122,2.58-1.21,3.011-1.093C16.44,25.3,24.438,20.573,24.438,12.143,24.438,5.489,19.268.563,12.527.563Zm7.184,8.912L16.2,15.037a1.8,1.8,0,0,1-2.6.478l-2.8-2.092a.722.722,0,0,0-.866,0L6.167,16.284a.567.567,0,0,1-.824-.754L8.857,9.966a1.8,1.8,0,0,1,2.6-.478l2.795,2.092a.722.722,0,0,0,.866,0l3.774-2.858a.566.566,0,0,1,.823.752Z" transform="translate(3.562 3.437)" fill="#fff"/>
+  </g>
+</svg>

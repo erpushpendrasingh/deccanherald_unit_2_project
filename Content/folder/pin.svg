@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="25" height="27" transform="translate(3.428 3.588)" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-prst">
+      <rect width="32" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="prst" clip-path="url(#clip-prst)">
+    <rect width="32" height="32" fill="#fff"/>
+    <rect id="Rectangle_1" data-name="Rectangle 1" width="32" height="32" fill="#e60023"/>
+    <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(0.572 -0.588)" clip-path="url(#clip-path)">
+      <path id="pinterest" d="M12.355,0C5.879,0,2.438,4.15,2.438,8.673c0,2.1,1.172,4.715,3.049,5.544.535.241.465-.053.925-1.815a.418.418,0,0,0-.1-.41c-2.683-3.1-.524-9.483,5.66-9.483,8.95,0,7.278,12.384,1.557,12.384A2.112,2.112,0,0,1,11.3,12.3c.421-1.706,1.246-3.539,1.246-4.769C12.55,4.436,7.934,4.9,7.934,9a4.966,4.966,0,0,0,.449,2.125s-1.485,6-1.761,7.121a15.922,15.922,0,0,0,.109,5.234.156.156,0,0,0,.283.072,18.561,18.561,0,0,0,2.445-4.6c.183-.674.934-3.41.934-3.41a4.081,4.081,0,0,0,3.443,1.642c4.524,0,7.793-3.976,7.793-8.91C21.614,3.539,17.565,0,12.355,0Z" transform="translate(2.81 5.317)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

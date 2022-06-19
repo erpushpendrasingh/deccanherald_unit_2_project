@@ -1,0 +1,116 @@
+
+    #container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    a{
+        color:#0087a8;
+        text-decoration: none;
+    }
+    ul{
+        list-style-type: none ;
+    }
+    .list {
+        list-style-type: none;
+        display: flex;
+        justify-content: start;
+        padding: 0px;
+    }
+
+    .list>li>a {
+        text-decoration: none;
+    }
+
+    .strap>h1 {
+        width: 80%;
+    }
+
+    .sanspro {
+        font-size: 15px;
+
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .group{
+        display: flex;
+    }
+    .time{
+        display: flex;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content>p{
+        margin: 5px;
+    }
+    #parent{
+        display: flex;
+    }
+    #news{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        justify-content: start;
+        padding: 20px;
+    }
+    #right{
+        width: 30%;
+        border: 1px solid black;
+        height: 2500px;
+    }
+    #pdfimage{
+        width: 85%;
+    }
+    .content+div>p{
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    #videos{
+        width: 70%;
+        height: 300px;
+        border: 1px solid black;
+    }
+  
+    .static_text{
+        
+            padding: 5px;
+            
+            margin: 10px;
+            border-radius: 18px;
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        
+    }
+    @media all and (min-width:320px) and (max-width:671px){
+        #container{
+            width: 100%;
+        }
+        .item-list{
+            width: 100%;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .box{
+          flex-direction: column;
+
+        }
+        #parent{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #content>img{
+            width: 100%;
+        }
+    }
