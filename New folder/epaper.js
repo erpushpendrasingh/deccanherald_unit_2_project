@@ -131,6 +131,8 @@ function displayLogin() {
         details.forEach(function(elem, ind){
             if(elem.Email=== email && elem.Password=== pass){
                 alert(" Successfully Logged in")
+            }else{
+                alert("Please enter correct credential")
             }
         })
     })
@@ -653,27 +655,16 @@ function loginbutton() {
 function details() {
 
   
-    // let email = document.querySelector("#email").value
-       
-    function check(email){
-        for (let i = 0; arr.length; i++) {
-            if (arr[i].Email === email) {
-                  
-                exist()
-                return false
-                         
-                   
-                }
-            } 
-            return true 
-
-    }
+    let count = 0
     
-        
-    
-    
-  
-
+    arr.forEach(function(elem){
+        let email = document.querySelector("#email").value
+        if(elem.Email === email){
+            count++
+           
+        }
+       })
+     
     if (inputf === true && input1f === true) {
         dailypaperflag = false
     } else if (inputf === false && input1f === false) {
@@ -692,6 +683,8 @@ function details() {
     let alert4 = document.createElement("li")
     let alert5 = document.createElement("li")
 
+    arr = [{name: "good"},{name: "good"},{name: "good"},{name: "good"},{name: "good"},]
+    
     function formfilled() {
 
         if (emailflag === true && termflag === true && mobileflag === true
@@ -714,11 +707,13 @@ function details() {
             Name: document.querySelector("#name").value,
             Password: document.querySelector("#password").value,
         }
-        
-        if(check(obj.Email)){
+       
+        if(count === 0){
             arr.push(obj)
             localStorage.setItem("details", JSON.stringify(arr))
             paywindow()
+        }else{
+            exist()
         }
        
        
