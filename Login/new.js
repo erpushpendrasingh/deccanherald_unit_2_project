@@ -113,7 +113,7 @@ function displayLogin() {
     let logo = document.createElement("img")
     logo.style.width = "20px"
     logo.style.height = "20px"
-    logo.setAttribute("src", "watsapplogo.png")
+    logo.setAttribute("src", "images/watsapplogo.png")
     checkw.append(whatsapp, logo)
     div1.append(tickw, checkw)
 
@@ -157,11 +157,11 @@ function displayLogin() {
     div10.style.display = "flex"
     div10.style.justifyContent = "center"
     let img = document.createElement("img")
-    img.setAttribute("src", "fbnew.png")
+    img.setAttribute("src", "images/fbnew.png")
     let line3 = document.createElement("div")
     line3.style.border = "1px solid black"
     let imgg = document.createElement("img")
-    imgg.setAttribute("src", "googlenew.png")
+    imgg.setAttribute("src", "images/googlenew.png")
     div10.append(img, line3, imgg)
 
 
@@ -316,11 +316,11 @@ function displaySubs() {
     logodiv.style.margin = "auto"
     logodiv.style.gap = "15px"
     let paytm = document.createElement("img")
-    paytm.setAttribute('src', "paytm-logo.png")
+    paytm.setAttribute('src', "images/paytm-logo.png")
     let part = document.createElement("div")
     part.style.border = "1px solid black"
     let gpay = document.createElement("img")
-    gpay.setAttribute('src', "rp-logo.png")
+    gpay.setAttribute('src', "images/rp-logo.png")
     logodiv.append(paytm, part, gpay)
 
 
@@ -611,11 +611,11 @@ function signup() {
     let div10 = document.createElement("div")
     div10.style.justifyContent = "center"
     let img = document.createElement("img")
-    img.setAttribute("src", "fbnew.png")
+    img.setAttribute("src", "images/fbnew.png")
     let line3 = document.createElement("div")
     line3.style.border = "1px solid black"
     let imgg = document.createElement("img")
-    imgg.setAttribute("src", "googlenew.png")
+    imgg.setAttribute("src", "images/googlenew.png")
     div10.append(img, line3, imgg)
 
     message.append(wem,)
@@ -771,7 +771,7 @@ function paywindow(){
     box1.setAttribute("id", "box1")
     let Limg = document.createElement("img")
     Limg.setAttribute("id", "Limg")
-    Limg.setAttribute("src", "Left.svg")
+    Limg.setAttribute("src", "images/Left.svg")
     Limg.addEventListener("click", function () {
         box.innerHTML = ""
     })
@@ -799,7 +799,7 @@ function paywindow(){
         p1.innerText = "I authorised Deccan Herald to auto  subscribtion plan"
         let img1 = document.createElement("img")
         img1.setAttribute("class", "rightlogo")
-        img1.setAttribute("src", "right.svg")
+        img1.setAttribute("src", "images/right.svg")
         holder1.append(h1,p1)
         box2.append(holder1,img1)
         
@@ -820,7 +820,7 @@ function paywindow(){
         p2.innerText = "I authorised Deccan Herald to auto  subscribtion plan"
         let img2 = document.createElement("img")
         img2.setAttribute("class", "rightlogo")
-        img2.setAttribute("src", "right.svg")
+        img2.setAttribute("src", "images/right.svg")
         holder2.append(h2,p2)
         box3.append(holder2,img2)
     
@@ -840,7 +840,7 @@ function paywindow(){
         p3.innerText = "I authorised Deccan Herald to auto  subscribtion plan"
         let img3 = document.createElement("img")
         img3.setAttribute("class", "rightlogo")
-        img3.setAttribute("src", "right.svg")
+        img3.setAttribute("src", "images/right.svg")
         holder3.append(h3,p3)
         box4.append(holder3,img3)
     
@@ -859,7 +859,7 @@ function paywindow(){
         p4.innerText = "I authorised Deccan Herald to auto  subscribtion plan"
         let img4 = document.createElement("img")
         img4.setAttribute("class", "rightlogo")
-        img4.setAttribute("src", "right.svg")
+        img4.setAttribute("src", "images/right.svg")
         holder4.append(h4,p4)
         box5.append(holder4,img4)
     
@@ -877,11 +877,11 @@ function paywindow(){
         let paytm = document.createElement("img")
         let hr =  document.createElement("hr")
         hr.style.margin = "5px"
-        paytm.setAttribute("src", "paytm-logo.png")
+        paytm.setAttribute("src", "images/paytm-logo.png")
         paytm.setAttribute("class", "paylogo")
         let razor = document.createElement("img")
         razor.setAttribute("class", "paylogo")
-        razor.setAttribute("src", "rp-logo.png")
+        razor.setAttribute("src", "images/rp-logo.png")
         box7.append(paytm,hr,razor)
         parent.append(box1,box2,box3,box4,box5,box6,box7)
         box.append(parent)
